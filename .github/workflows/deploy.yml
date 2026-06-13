@@ -20,9 +20,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          submodules: false
-          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -36,11 +33,8 @@ jobs:
           rm -rf themes/PaperMod
           git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 
-      - name: Verify theme exists
-        run: ls -la themes/PaperMod
-
       - name: Build site
-        run: hugo --minify --cleanDestinationDir --verbose
+        run: hugo --minify --cleanDestinationDir
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -53,5 +47,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
