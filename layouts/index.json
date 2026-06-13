@@ -1,8 +1,0 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- range .Site.RegularPages -}}
-{
-  "title": "{{ .Title }}",
-  "permalink": "{{ .Permalink }}",
-  "content": "{{ .Plain | truncate 200 }}"
-}
-{{- end -}}
