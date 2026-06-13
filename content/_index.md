@@ -1,11 +1,11 @@
 ---
-
 title: "Mój Blog IT"
-
 ---
 
-# 👋 Witaj
+# 👋 Witaj na moim blogu
 
-To jest mój blog programistyczny.
+To jest blog o programowaniu, AI i systemach.
 
-## 📚 Posty
+## 📚 Ostatnie wpisy
+
+Poniżej znajdziesz moje posty.
