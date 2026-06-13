@@ -1,0 +1,36 @@
+<div class="search-box">
+  <input id="searchInput" type="text" placeholder="Szukaj artykułów..." />
+  <ul id="results"></ul>
+</div>
+
+<script>
+let data = [];
+
+fetch("/index.json")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
+  });
+
+const fuse = new Fuse([], {
+  keys: ["title", "content"],
+  threshold: 0.3
+});
+
+document.getElementById("searchInput").addEventListener("input", function(e) {
+  const query = e.target.value;
+
+  if (!query) {
+    document.getElementById("results").innerHTML = "";
+    return;
+  }
+
+  fuse.setCollection(data);
+  const results = fuse.search(query);
+
+  document.getElementById("results").innerHTML =
+    results.map(r =>
+      `<li><a href="${r.item.permalink}">${r.item.title}</a></li>`
+    ).join("");
+});
+</script>
