@@ -6,3 +6,6 @@ theme = "PaperMod"
 
 [params]
   defaultTheme = "dark"
+  ShowRecentPosts = true
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
