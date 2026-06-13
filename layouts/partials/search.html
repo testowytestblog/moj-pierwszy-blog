@@ -9,20 +9,17 @@
 let fuse;
 let data = [];
 
-// 1. najpierw JSON
 fetch("/moj-pierwszy-blog/index.json")
-  .then(res => res.json())
+  .then(r => r.json())
   .then(json => {
     data = json;
 
-    // 2. dopiero teraz Fuse
     fuse = new Fuse(data, {
       keys: ["title", "content", "summary"],
       threshold: 0.3
     });
   });
 
-// 3. search
 document.getElementById("searchInput").addEventListener("input", (e) => {
   const q = e.target.value;
 
