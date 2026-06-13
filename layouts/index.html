@@ -1,15 +1,10 @@
 {{ define "main" }}
-
 <h2>Posty</h2>
-
 {{ range .Site.RegularPages }}
   <p>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </p>
 {{ end }}
-
 <div id="search"></div>
-
 {{ partial "search.html" . }}
-
 {{ end }}
