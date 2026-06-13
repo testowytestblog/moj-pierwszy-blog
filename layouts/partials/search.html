@@ -1,11 +1,23 @@
-<link href="pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="pagefind/pagefind-ui.js"></script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+<div id="search"></div>
+
+<script src="/pagefind/pagefind-ui.js" defer></script>
+
 <script>
+
 window.addEventListener("DOMContentLoaded", () => {
+
     new PagefindUI({
+
         element: "#search",
+
         showSubResults: true,
+
         excerptLength: 30
+
     })
+
 })
+
 </script>
