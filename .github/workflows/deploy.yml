@@ -18,7 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo (with themes)
+        uses: actions/checkout@v4
         with:
           submodules: true
 
@@ -30,7 +31,7 @@ jobs:
       - name: Build site
         run: hugo --minify
 
-      - name: Upload
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
@@ -40,5 +41,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
