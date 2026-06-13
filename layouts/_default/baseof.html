@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Site.Title }}</title>
+
+  {{ partial "extend_head.html" . }}
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+</body>
+</html>
