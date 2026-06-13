@@ -18,8 +18,10 @@ enableRobotsTXT = true
   ShowShareButtons = true
   ShowToc = true
   ShowRecentPosts = true
+  disableSpecial1stPost = true
+  pluralizeListTitles = false
 
-  # sekcje które mają się pojawiać jako "blog feed"
+# sekcje które mają się pojawiać jako "blog feed"
   mainSections = ["programowanie", "ai", "testowanie"]
 
 # 🏷️ taxonomie (tagi i kategorie)
