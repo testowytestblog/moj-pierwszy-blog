@@ -1,6 +1,10 @@
 baseURL = "https://testowytestblog.github.io/moj-pierwszy-blog/"
 title = "Mój Blog IT"
 
+# dla wyszukiwarki
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 theme = "PaperMod"
 
 defaultContentLanguage = "pl"
@@ -68,7 +72,3 @@ enableRobotsTXT = true
   [markup.highlight]
     style = "dracula"
     lineNos = true
-
-# dla wyszukiwarki
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
