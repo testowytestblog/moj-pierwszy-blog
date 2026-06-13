@@ -2,10 +2,22 @@
 title: "Mój Blog IT"
 ---
 
-# 👋 Witaj na moim blogu
+# 👋 Witaj
 
-To jest blog o programowaniu, AI i systemach.
+To jest mój blog o programowaniu, AI i testowaniu.
 
-## 📚 Ostatnie wpisy
+---
 
-Poniżej znajdziesz moje posty.
+## 📂 Kategorie
+
+- [💻 Programowanie](/moj-pierwszy-blog/programowanie/)
+
+- [🤖 AI](/moj-pierwszy-blog/ai/)
+
+- [🧪 Testowanie](/moj-pierwszy-blog/testowanie/)
+
+---
+
+## 🆕 Ostatnie wpisy
+
+Poniżej znajdziesz najnowsze artykuły.
