@@ -1,6 +1,6 @@
 ---
 title: "Something"
-date: 2026-06-13
+date: 2026-06-11
 draft: false
 tags: ["C#, programowania"]
 ---
