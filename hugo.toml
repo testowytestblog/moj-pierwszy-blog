@@ -20,6 +20,8 @@ enableRobotsTXT = true
   ShowRecentPosts = true
   disableSpecial1stPost = true
   pluralizeListTitles = false
+  ShowSearch = true
+  fuseOpts = true
 
 # sekcje które mają się pojawiać jako "blog feed"
   mainSections = ["programowanie", "ai", "testowanie"]
@@ -66,3 +68,7 @@ enableRobotsTXT = true
   [markup.highlight]
     style = "dracula"
     lineNos = true
+
+# dla wyszukiwarki
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
