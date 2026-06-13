@@ -20,4 +20,4 @@ To jest mój blog o programowaniu, AI i testowaniu.
 
 ## 🆕 Ostatnie wpisy
 
-Poniżej znajdziesz najnowsze artykuły.
+{{< recent_posts >}}
