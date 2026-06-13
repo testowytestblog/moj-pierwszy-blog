@@ -18,15 +18,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (with themes)
-        uses: actions/checkout@v4
-        with:
-          submodules: true
+      - uses: actions/checkout@v4
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
+
+      - name: Clone PaperMod theme
+        run: |
+          git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 
       - name: Build site
         run: hugo --minify
@@ -41,6 +42,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
