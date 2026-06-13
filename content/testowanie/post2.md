@@ -15,3 +15,5 @@ title="YouTube video"
 frameborder="0"
 allowfullscreen>
 </iframe>
+
+DALSZA CZĘŚĆ POSTA -> 
