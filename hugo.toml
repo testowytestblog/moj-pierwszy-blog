@@ -9,3 +9,4 @@ theme = "PaperMod"
   ShowRecentPosts = true
   ShowBreadCrumbs = true
   ShowReadingTime = true
+  mainSections = ["programowanie", "ai", "testowanie"]
