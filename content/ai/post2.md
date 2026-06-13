@@ -1,6 +1,6 @@
 ---
 title: "Dlaczego korzystac z ai?"
-date: 2026-06-13
+date: 2026-06-12
 draft: false
 tags: ["ai"]
 ---
