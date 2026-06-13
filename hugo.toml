@@ -12,3 +12,6 @@ theme = "PaperMod"
   mainSections = ["programowanie", "ai", "testowanie"]
   disableSpecial1stPost = true
   pluralizeListTitles = false
+
+[pagination]
+  pagerSize = 10
