@@ -1,15 +1,8 @@
 baseURL = "https://testowytestblog.github.io/moj-pierwszy-blog/"
-
 languageCode = "pl"
-
 title = "Mój Blog IT"
 
 theme = "PaperMod"
 
 [params]
-
-  ShowReadingTime = true
-
-  ShowPostNavLinks = true
-
   defaultTheme = "dark"
