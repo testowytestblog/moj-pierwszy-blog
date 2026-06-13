@@ -1,5 +1,7 @@
 ---
+
 title: "Mój Blog IT"
+
 ---
 
 # 👋 Witaj
