@@ -1,9 +1,16 @@
+---
+title: "Witaj na moim blogu"
+date: 2026-06-13
+draft: false
+tags: ["intro", "start"]
+---
+
 # 👋 Witaj
 
-To jest mój blog programistyczny.
+To jest mój pierwszy wpis na blogu programistycznym.
 
-Piszę o:
-- backend
+Będę tu pisał o:
+- backendzie
 - AI
 - systemach
 - projektach
