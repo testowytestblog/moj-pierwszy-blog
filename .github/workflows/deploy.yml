@@ -39,13 +39,16 @@ jobs:
           git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 
       - name: Build site
-        run: hugo --minify --cleanDestinationDir
+        run: hugo --minify --cleanDestinationDir -d public
+
+      - name: Verify output
+        run: ls -R public
 
       - name: Install Pagefind
         run: npm install -g pagefind
 
       - name: Build search index
-        run: pagefind --site public
+        run: pagefind --source public --output-subdir pagefind
 
       - name: Verify Pagefind output
         run: ls -la public/pagefind
