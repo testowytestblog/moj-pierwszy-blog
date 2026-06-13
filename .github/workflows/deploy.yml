@@ -1,5 +1,3 @@
-name: Deploy Hugo site
-
 on:
   push:
     branches: ["main"]
@@ -21,11 +19,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node (IMPORTANT for Pagefind)
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -34,24 +27,11 @@ jobs:
 
       - name: Install PaperMod theme
         run: |
-          mkdir -p themes
           rm -rf themes/PaperMod
           git clone --depth 1 https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 
       - name: Build site
-        run: hugo --minify --cleanDestinationDir -d public
-
-      - name: Verify output
-        run: ls -R public
-
-      - name: Install Pagefind
-        run: npm install -g pagefind
-
-      - name: Build search index
-        run: pagefind --source public --output-subdir pagefind
-
-      - name: Verify Pagefind output
-        run: ls -la public/pagefind
+        run: hugo --minify --cleanDestinationDir
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -64,4 +44,5 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
