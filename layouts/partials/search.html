@@ -6,29 +6,32 @@
 </div>
 
 <script>
+let fuse;
 let data = [];
 
-fetch("/index.json")
+// 1. najpierw JSON
+fetch("/moj-pierwszy-blog/index.json")
   .then(res => res.json())
   .then(json => {
     data = json;
+
+    // 2. dopiero teraz Fuse
+    fuse = new Fuse(data, {
+      keys: ["title", "content", "summary"],
+      threshold: 0.3
+    });
   });
 
-const fuse = new Fuse([], {
-  keys: ["title", "content"],
-  threshold: 0.3
-});
+// 3. search
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  const q = e.target.value;
 
-document.getElementById("searchInput").addEventListener("input", function(e) {
-  const query = e.target.value;
-
-  if (!query) {
+  if (!q || !fuse) {
     document.getElementById("results").innerHTML = "";
     return;
   }
 
-  fuse.setCollection(data);
-  const results = fuse.search(query);
+  const results = fuse.search(q);
 
   document.getElementById("results").innerHTML =
     results.map(r =>
