@@ -1,17 +1,66 @@
 baseURL = "https://testowytestblog.github.io/moj-pierwszy-blog/"
-languageCode = "pl"
 title = "Mój Blog IT"
 
 theme = "PaperMod"
 
+defaultContentLanguage = "pl"
+paginate = 10
+
+enableRobotsTXT = true
+
+# 🔥 ważne dla PaperMod
 [params]
   defaultTheme = "dark"
-  ShowRecentPosts = true
-  ShowBreadCrumbs = true
   ShowReadingTime = true
-  mainSections = ["programowanie", "ai", "testowanie"]
-  disableSpecial1stPost = true
-  pluralizeListTitles = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  ShowToc = true
+  ShowRecentPosts = true
 
-[pagination]
-  pagerSize = 10
+  # sekcje które mają się pojawiać jako "blog feed"
+  mainSections = ["programowanie", "ai", "testowanie"]
+
+# 🏷️ taxonomie (tagi i kategorie)
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# 🌐 język (POPRAWIONE dla Hugo 0.163+)
+[languages]
+  [languages.pl]
+    languageName = "Polski"
+    weight = 1
+    title = "Mój Blog IT"
+
+# 🧭 (opcjonalne menu)
+[[menu.main]]
+  name = "Start"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Programowanie"
+  url = "/programowanie/"
+  weight = 2
+
+[[menu.main]]
+  name = "AI"
+  url = "/ai/"
+  weight = 3
+
+[[menu.main]]
+  name = "Testowanie"
+  url = "/testowanie/"
+  weight = 4
+
+# ⚙️ markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    style = "dracula"
+    lineNos = true
