@@ -10,4 +10,4 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowReadingTime = true
   mainSections = ["programowanie", "ai", "testowanie"]
-  disableSpecial1stPost = truedisableSpecial1stPost = true
+  disableSpecial1stPost = true
