@@ -1,4 +1,8 @@
 baseURL = "https://testowytestblog.github.io/moj-pierwszy-blog/"
 languageCode = "pl"
-title = "Mój Blog"
-theme = "blowfish"
+title = "Mój Blog IT"
+
+defaultContentLanguage = "pl"
+
+[params]
+  description = "Blog programistyczny"
