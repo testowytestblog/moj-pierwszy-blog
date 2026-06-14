@@ -8,6 +8,11 @@ paginate = 10
 
 enableRobotsTXT = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+  
+
 # 🔥 ważne dla PaperMod
 [params]
   defaultTheme = "dark"
@@ -22,6 +27,11 @@ enableRobotsTXT = true
   pluralizeListTitles = false
   ShowSearch = true
   fuseOpts = true
+
+    [params.search]
+      enable = true
+      title = "Wyszukiwarka"
+      placeholder = "Szukaj postów..."
 
 # sekcje które mają się pojawiać jako "blog feed"
   mainSections = ["programowanie", "ai", "testowanie"]
