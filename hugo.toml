@@ -34,6 +34,11 @@ enableRobotsTXT = true
     [languages.pl.params]
       showSearchButton = true
 
+    [languages.pl.params.profileMode]
+      enable = true
+      title = "Twoje Imię & Nazwisko"
+      subtitle = "Software Engineer / Pasjonat AI"
+
     # Konfiguracja wyszukiwarki dla języka polskiego
     [languages.pl.params.search]
       enable = true
