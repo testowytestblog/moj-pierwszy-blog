@@ -27,6 +27,7 @@ enableRobotsTXT = true
   pluralizeListTitles = false
   ShowSearch = true
   fuseOpts = true
+  showSearchButton = true
 
     [params.search]
       enable = true
