@@ -30,16 +30,17 @@ enableRobotsTXT = true
     weight = 1
     title = "Mój Blog IT"
     
-    # Przycisk lupy w menu dla języka polskiego
+    # 1. Główne parametry języka PL
     [languages.pl.params]
       showSearchButton = true
 
+    # 2. Włączenie i parametry Profile Mode (Poprawny blok)
     [languages.pl.params.profileMode]
-      enable = true
+      enabled = true
       title = "Twoje Imię & Nazwisko"
       subtitle = "Software Engineer / Pasjonat AI"
 
-    # Konfiguracja wyszukiwarki dla języka polskiego
+    # 3. Konfiguracja wyszukiwarki dla języka PL
     [languages.pl.params.search]
       enable = true
       title = "Wyszukiwarka"
@@ -66,13 +67,12 @@ enableRobotsTXT = true
       url = "testowanie/"
       weight = 4
 
-    # Bezpieczny link tekstowy do wyszukiwarki
     [[languages.pl.menu.main]]
       name = "Szukaj 🔍"
       url = "search/"
       weight = 50
 
-# ⚙️ Markdown rendering (BEZ unsafe = true)
+# ⚙️ Markdown rendering
 [markup]
   [markup.highlight]
     style = "dracula"
