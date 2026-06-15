@@ -1,0 +1,15 @@
+/* Przypięcie nagłówka na stałe */
+.header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: var(--theme) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+/* Naprawa spisu treści */
+.toc {
+    position: sticky !important;
+    top: 80px !important;
+    z-index: 99 !important;
+}
