@@ -24,6 +24,7 @@ enableRobotsTXT = true
   disableSpecial1stPost = true
   pluralizeListTitles = false
   mainSections = ["programowanie", "ai", "testowanie"]
+  customCSS = ["css/custom.css"]
 
 # 🌐 Konfiguracja językowa
 [languages]
