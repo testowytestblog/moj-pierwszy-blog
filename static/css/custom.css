@@ -1,15 +1,23 @@
-/* Przypięcie nagłówka na stałe */
+/* Bezwzględne przypięcie nagłówka do ekranu */
 .header {
-    position: sticky !important;
+    position: fixed !important;
     top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
     z-index: 1000 !important;
     background: var(--theme) !important;
     border-bottom: 1px solid var(--border) !important;
 }
 
-/* Naprawa spisu treści */
+/* Ponieważ nagłówek 'fixed' wisi w powietrzu, musimy obniżyć całą resztę strony, 
+   żeby nagłówek nie zasłaniał początku artykułów lub profilu (dodajemy margines) */
+.main {
+    margin-top: 80px !important; 
+}
+
+/* Naprawa spisu treści (TOC) */
 .toc {
-    position: sticky !important;
-    top: 80px !important;
+    position: fixed !important;
+    top: 100px !important;
     z-index: 99 !important;
 }
