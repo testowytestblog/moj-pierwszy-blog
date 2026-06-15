@@ -24,7 +24,6 @@ enableRobotsTXT = true
   disableSpecial1stPost = true
   pluralizeListTitles = false
   mainSections = ["programowanie", "ai", "testowanie"]
-  customCSS = ["css/custom.css"]
 
 # 🌐 Konfiguracja językowa
 [languages]
@@ -36,7 +35,6 @@ enableRobotsTXT = true
     # 1. Główne parametry języka PL
     [languages.pl.params]
       showSearchButton = true
-      customCSS = ["css/custom.css"]
 
     # 2. Włączenie i parametry Profile Mode (Poprawny blok)
     [languages.pl.params.profileMode]
