@@ -97,5 +97,5 @@ enableRobotsTXT = true
 # ⚙️ Markdown rendering
 [markup]
   [markup.highlight]
-    style = "dracula"
+    style = "monokai"
     lineNos = true
