@@ -24,7 +24,6 @@ enableRobotsTXT = true
   disableSpecial1stPost = true
   pluralizeListTitles = false
   mainSections = ["programowanie", "ai", "testowanie"]
-  stickyHeader = true
 
 # 🌐 Konfiguracja językowa
 [languages]
