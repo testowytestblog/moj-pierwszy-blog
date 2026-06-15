@@ -1,0 +1,15 @@
+/* Przypięcie nagłówka na stałe do góry */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Dodajemy tło, żeby tekst pod spodem nie prześwitywał podczas scrollowania */
+    background: var(--theme); 
+}
+
+/* Opcjonalnie: upewnienie się, że pasek postępu czytania też ładnie współpracuje */
+.progress-container {
+    position: sticky;
+    top: 60px; /* Dopasowanie pod wysokość przypiętego nagłówka */
+    z-index: 999;
+}
